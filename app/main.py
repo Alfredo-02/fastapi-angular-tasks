@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import logging
-from . import models
-from .database import engine, Base
-from .controllers import router
+from app import models
+from app.database import engine, Base
+from app.controllers import router
 
 # Configurar logging
 logging.basicConfig(level=logging.INFO)
